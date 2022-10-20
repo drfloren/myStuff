@@ -1,4 +1,4 @@
-d#' @title Check Normality
+#' @title Check Normality
 #' 
 #' @description
 #' This function is designed to allow users to check the normality of residuals through an intuitive approach. It generates a random set of normally distributed variables, then inserts the given residuals into this set. If users can distinguish the QQ Plot of their data from the randomly generated normal data, their data does not follow a normal distribution.
