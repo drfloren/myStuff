@@ -18,5 +18,5 @@
 #' @author Michael Floren
 #' 
 fr <- function(x, dig=2){ #a last stage formatting tool for numbers for the article (used in below functions)
-  format(round(x, digits = dig), nsmall=dig)
+  gsub("\\s", "", format(round(x, digits = dig), nsmall=dig))
 }
