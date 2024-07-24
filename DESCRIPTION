@@ -20,5 +20,6 @@ Collate:
     'fixp.R'
     'grab.R'
     'keep.R'
+    'midval.R'
     'myStuff.R'
     'px.R'
