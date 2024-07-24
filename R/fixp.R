@@ -18,6 +18,8 @@
 #' fixp(mod,dig=4)
 #' 
 #' @author Michael Floren
+#' 
+#' @seealso [fix_ind_p()]
 
 fixp <- function(x, dig=2)
   {
