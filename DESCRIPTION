@@ -1,7 +1,7 @@
 Package: myStuff
 Title: My Stuff
 Version: 0.4
-Authors@R: as.person("Michael Floren <michael.floren@unco.edu> [aut, cre]")
+Authors@R: as.person("Michael Floren <drmfloren@gmail.com> [aut, cre]")
 Description: Loads as set of useful functions
 Depends:
     utils,
@@ -9,4 +9,15 @@ Depends:
 Imports: xtable
 License: LICENSE
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.2
+Collate: 
+    'check_norm.R'
+    'dpsl.R'
+    'ept.R'
+    'fr.R'
+    'fix_ind_p.R'
+    'fixp.R'
+    'grab.R'
+    'keep.R'
+    'myStuff.R'
+    'px.R'
