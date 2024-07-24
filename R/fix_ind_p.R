@@ -19,7 +19,7 @@
 #' 
 #' @include fr.R
 #' 
-#' @seealso [myStuff::fixp()]
+#' @seealso [fixp()]
 
 fix_ind_p <- function(x, dig=2, wp=TRUE){
   ptext <- "p "

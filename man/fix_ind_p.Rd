@@ -26,7 +26,7 @@ fix_ind_p(0.05, dig=2, wp=FALSE)
 
 }
 \seealso{
-[myStuff::fixp()]
+\code{\link[=fixp]{fixp()}}
 }
 \author{
 Michael Floren

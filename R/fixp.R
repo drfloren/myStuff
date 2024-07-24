@@ -19,7 +19,7 @@
 #' 
 #' @author Michael Floren
 #' 
-#' @seealso [myStuff::fix_ind_p()]
+#' @seealso [fix_ind_p()]
 
 fixp <- function(x, dig=2)
   {

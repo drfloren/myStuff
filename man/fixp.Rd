@@ -26,7 +26,7 @@ fixp(mod,dig=4)
 
 }
 \seealso{
-[myStuff::fix_ind_p()]
+\code{\link[=fix_ind_p]{fix_ind_p()}}
 }
 \author{
 Michael Floren
