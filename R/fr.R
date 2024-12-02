@@ -13,7 +13,7 @@
 #' @examples 
 #' fr(2.04, 2)
 #' fr(2.04, 1)
-#' fr(2.04, 0)\
+#' fr(2.04, 0)
 #' 
 #' @author Michael Floren
 #' 
