@@ -4,12 +4,14 @@
 \alias{fr}
 \title{Format and Round}
 \usage{
-fr(x, dig = 2)
+fr(x, dig = 2, remlead0 = FALSE, trim = TRUE, ...)
 }
 \arguments{
 \item{x}{The value to round and format}
 
 \item{dig}{The number of digits you wish to round to}
+
+\item{...}{Additional arguments passed to \code{format}}
 }
 \description{
 A function to round and format decimals to the correct digits (including following zeros).
@@ -20,7 +22,7 @@ This function expects a number. It uses the round command to round appropriately
 \examples{
 fr(2.04, 2)
 fr(2.04, 1)
-fr(2.04, 0)\
+fr(2.04, 0)
 
 }
 \author{

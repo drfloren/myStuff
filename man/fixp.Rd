@@ -4,7 +4,7 @@
 \alias{fixp}
 \title{Fix P-Values}
 \usage{
-fixp(x, dig = 2)
+fixp(x, dig = 2, equals = TRUE)
 }
 \arguments{
 \item{x}{The summary table to "fix" the p-values for}

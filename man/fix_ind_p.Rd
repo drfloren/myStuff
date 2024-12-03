@@ -4,7 +4,7 @@
 \alias{fix_ind_p}
 \title{Fix Individual P-Values}
 \usage{
-fix_ind_p(x, dig = 2, wp = TRUE)
+fix_ind_p(x, dig = 2, wp = TRUE, equals = TRUE)
 }
 \arguments{
 \item{x}{The p-value to "fix"}

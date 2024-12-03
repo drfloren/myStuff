@@ -21,14 +21,14 @@
 #' 
 #' @seealso [fixp()]
 
-fix_ind_p <- function(x, dig=2, wp=TRUE){
+fix_ind_p <- function(x, dig=2, wp=TRUE, equals=TRUE){
   ptext <- "p "
   if(!wp) ptext <- ""
   rx <- round(x, digits=dig)
   if(rx==0){
-    rx <- paste0("< 0.", paste0(rep(0, dig - 1), collapse = ""), "1")
+    rx <- paste0("< .", paste0(rep(0, dig - 1), collapse = ""), "1")
   } else{
-    rx <- paste0( "= ", fr(rx, dig=dig))
+    rx <- paste0(ifelse(equals, "= ", ""), fr(rx, dig=dig, remlead0=TRUE))
   }
   paste0(ptext, rx)
 }
