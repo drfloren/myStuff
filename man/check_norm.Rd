@@ -14,6 +14,9 @@ check_norm(resid, grid = 3)
 \description{
 This function is designed to allow users to check the normality of residuals through an intuitive approach. It generates a random set of normally distributed variables, then inserts the given residuals into this set. If users can distinguish the QQ Plot of their data from the randomly generated normal data, their data does not follow a normal distribution.
 }
+\details{
+This function utilizes a series of QQ Plots that are randomly generated from the normal distribution, and mixes in a single plot of the data. The idea is to help the user determine just how far away from "normal" a plot is by seeing a series of comparisons.
+}
 \author{
 Michael Floren
 }

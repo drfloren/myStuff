@@ -6,7 +6,7 @@
 #' @param resid Residuals from a fit model
 #' @param grid Dimension for the grid of plots, given as an integer.
 #' 
-#' @details
+#' @details This function utilizes a series of QQ Plots that are randomly generated from the normal distribution, and mixes in a single plot of the data. The idea is to help the user determine just how far away from "normal" a plot is by seeing a series of comparisons.
 #' 
 #' @author Michael Floren
 check_norm <- function(resid, grid=3){
