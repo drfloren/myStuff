@@ -18,6 +18,9 @@
 #' 
 #' @author Michael Floren
 #' 
-fr <- function(x, dig=2, trim=TRUE, ...){ #a last stage formatting tool for numbers for the article (used in below functions)
-  format(round(x, digits = dig), nsmall=dig, trim=trim, ...)
+fr <- function(x, dig=2, remlead0 = FALSE, trim=TRUE, ...){ #a last stage formatting tool for numbers for the article (used in below functions)
+  out <- format(round(x, digits = dig), nsmall=dig, trim=trim, ...)
+  if(remlead0)
+    out <- sub("^0+", "", out)
+  out
 }
