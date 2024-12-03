@@ -2,7 +2,7 @@
 # Wasn't working earlier. The two lines immediately below is trying to mimic something done by Hadley Wickham. And it works.
 #' 
 #' @name myStuff
-#' @docType package
+#' @docType _PACKAGE
 #' 
 #' 
 #' 
