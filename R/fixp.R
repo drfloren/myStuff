@@ -30,9 +30,9 @@ fixp <- function(x, dig=2, equals=TRUE)
     for (i in 1:nrow(x)) {
       if(is.na(x[i,ncol(x)])){
         x[i, ncol(x)] <- NA
-      } else if (x[i, ncol(x)] != 0) {
-        x[i, ncol(x)] <- paste0(ifelse(equals, "= ", ""), 
-                                fr(x, dig=dig, remlead0=TRUE))
+      # } else if (x[i, ncol(x)] != 0) {
+      #   x[i, ncol(x)] <- paste0(ifelse(equals, "= ", ""), 
+      #                           fr(x, dig=dig, remlead0=TRUE))
       } else if (x[i, ncol(x)] == 0) {
         x[i, ncol(x)] <- paste0("< .", paste0(rep(0, dig - 1), collapse = ""), "1")
       }
