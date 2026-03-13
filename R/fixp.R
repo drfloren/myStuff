@@ -21,7 +21,7 @@
 #' 
 #' @seealso [fix_ind_p()]
 
-fixp <- function(x, dig=2, equals=FALSE)
+fixp <- function(x, dig=2, equals=FALSE, remlead0=TRUE)
   {
     x <- as.data.frame(x)
     if (substr(names(x)[ncol(x)], 1, 2) != "Pr") 
@@ -32,9 +32,11 @@ fixp <- function(x, dig=2, equals=FALSE)
         x[i, ncol(x)] <- NA
       } else if (x[i, ncol(x)] != 0) {
         x[i, ncol(x)] <- paste0(ifelse(equals, "= ", ""),
-                                myStuff::fr(as.numeric(x[i, ncol(x)]), dig=dig, remlead0=TRUE))
+                                myStuff::fr(as.numeric(x[i, ncol(x)]), dig=dig, remlead0=remlead0))
       } else if (x[i, ncol(x)] == 0) {
-        x[i, ncol(x)] <- paste0("< .", paste0(rep(0, dig - 1), collapse = ""), "1")
+        l0t <- "0"
+        if(remlead0) l0t <- ""
+        x[i, ncol(x)] <- paste0("< ", l0t, ".", paste0(rep(0, dig - 1), collapse = ""), "1")
       }
     }
     x
