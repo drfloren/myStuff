@@ -6,6 +6,7 @@
 #' 
 #' @param x The value to round and format
 #' @param dig The number of digits you wish to round to
+#' @param remlead0 If there is a lead zero prior to a decimal, should it be removed? Defaults to TRUE.
 #' @param ... Additional arguments passed to `format`
 #' 
 #' 
